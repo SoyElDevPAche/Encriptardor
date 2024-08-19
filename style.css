@@ -1,0 +1,156 @@
+* {
+    background: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la logo */
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+
+/* Estilo del área de texto */
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    text-transform: lowercase;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+/* Estilo del mensaje */
+.mensaje {
+    background-color: white;
+    background-image: url("/imaganes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-top: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    position: relative;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+/* Estilo de los botones */
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    width: 90%;
+    max-width: 328px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-desencriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 336px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 10%;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 80px;
+    }
+
+    .mensaje {
+        width: 40%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        width: 328px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .copiar {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .informacion {
+        text-align: left;
+        font-size: 18px;
+    }
+}
